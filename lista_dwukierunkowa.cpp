@@ -35,3 +35,13 @@ void lista::push_back(int wartosc) {
     }
     rozmiar++;
 }
+
+void lista::wyswietl() {
+    cout << "Lista:" << endl;
+
+    wezel* temp = glowa;
+    while (temp) {
+        cout << temp->dane << " ";
+        temp = temp->nastepny;
+    }
+}

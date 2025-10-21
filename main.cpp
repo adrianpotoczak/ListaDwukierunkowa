@@ -31,7 +31,7 @@ int main() {
         }
 
         cout << endl;
-
-        return 0;
     } while (true);
+
+    return 0;
 }
