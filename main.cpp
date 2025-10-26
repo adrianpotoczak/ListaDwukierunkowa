@@ -3,6 +3,7 @@
 #include "lista.h"
 #include "push_front.h"
 #include "push_back.h"
+#include "push_x.h"
 
 using namespace std;
 
@@ -15,6 +16,7 @@ int main() {
 
         cout << "poczatek - dodaj liczbe na poczatek listy" << endl;
         cout << "koniec - dodaj liczbe na koniec listy" << endl;
+        cout << "indeks - dodaj liczbe pod wskazany indeks" << endl;
         cout << "Twoj wybor: ";
         cin >> wybor;
 
@@ -24,6 +26,10 @@ int main() {
         }
         else if (wybor == "koniec") {
             pushback akcja;
+            akcja.wykonaj(lista);
+        }
+        else if (wybor == "indeks") {
+            pushx akcja;
             akcja.wykonaj(lista);
         }
         else {

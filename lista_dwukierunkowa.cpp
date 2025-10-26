@@ -45,3 +45,35 @@ void lista::wyswietl() {
         temp = temp->nastepny;
     }
 }
+
+bool lista::push_x(int indeks, int wartosc) {
+    if (indeks < 0 || indeks > rozmiar) {
+        return false;
+    }
+
+    if (indeks == 0) {
+        push_front(wartosc);
+        return true;
+    }
+
+    if (indeks == rozmiar) {
+        push_back(wartosc);
+        return true;
+    }
+    wezel* nowy = new wezel(wartosc);
+
+    wezel* obecny = glowa;
+    for (int i = 0; i < indeks; ++i) {
+        obecny = obecny->nastepny;
+    }
+
+    wezel* poprzedni = obecny->poprzedni;
+
+    nowy->nastepny = obecny;
+    nowy->poprzedni = poprzedni;
+    poprzedni->nastepny = nowy;
+    obecny->poprzedni = nowy;
+
+    rozmiar++;
+    return true;
+}

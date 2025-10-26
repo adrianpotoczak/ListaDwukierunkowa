@@ -14,4 +14,5 @@ public:
     void push_front(int wartosc);
     void push_back(int wartosc);
     void wyswietl();
+    bool push_x(int indeks, int wartosc);
 };

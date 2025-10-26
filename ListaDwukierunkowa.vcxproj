@@ -130,6 +130,7 @@
     <ClInclude Include="lista.h" />
     <ClInclude Include="push_back.h" />
     <ClInclude Include="push_front.h" />
+    <ClInclude Include="push_x.h" />
     <ClInclude Include="wezel.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
