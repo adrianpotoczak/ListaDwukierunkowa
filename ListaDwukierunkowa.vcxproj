@@ -127,6 +127,7 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="delete_front.h" />
     <ClInclude Include="lista.h" />
     <ClInclude Include="push_back.h" />
     <ClInclude Include="push_front.h" />

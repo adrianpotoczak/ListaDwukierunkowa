@@ -4,6 +4,7 @@
 #include "push_front.h"
 #include "push_back.h"
 #include "push_x.h"
+#include "delete_front.h"
 
 using namespace std;
 
@@ -17,6 +18,7 @@ int main() {
         cout << "poczatek - dodaj liczbe na poczatek listy" << endl;
         cout << "koniec - dodaj liczbe na koniec listy" << endl;
         cout << "indeks - dodaj liczbe pod wskazany indeks" << endl;
+		cout << "usun_poczatek - usun liczbe z poczatku listy" << endl;
         cout << "Twoj wybor: ";
         cin >> wybor;
 
@@ -30,6 +32,10 @@ int main() {
         }
         else if (wybor == "indeks") {
             pushx akcja;
+            akcja.wykonaj(lista);
+        }
+        else if (wybor == "usun_poczatek") {
+            deletefront akcja;
             akcja.wykonaj(lista);
         }
         else {

@@ -77,3 +77,23 @@ bool lista::push_x(int indeks, int wartosc) {
     rozmiar++;
     return true;
 }
+bool lista::delete_front() {
+    if (glowa == nullptr) {
+        return false;
+    }
+
+    wezel* do_usuniecia = glowa;
+
+    if (glowa == ogon) { 
+        glowa = nullptr;
+        ogon = nullptr;
+    }
+    else {
+        glowa = glowa->nastepny;
+        glowa->poprzedni = nullptr;
+    }
+
+    delete do_usuniecia;
+    rozmiar--;
+    return true;
+}
