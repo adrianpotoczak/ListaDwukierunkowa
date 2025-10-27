@@ -1,10 +1,9 @@
 #pragma once
-#include "lista.h"
-#include <iostream>
+#include "IOperacja.h"
 
-class clear {
+class clear : public IOperacja {
 public:
-    void wykonaj(lista& lista) {
+    void wykonaj(lista& lista) override {
         lista.clear();
         std::cout << "Lista zostala wyczyszczona." << std::endl;
     }

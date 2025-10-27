@@ -131,6 +131,8 @@
     <ClInclude Include="delete_back.h" />
     <ClInclude Include="delete_front.h" />
     <ClInclude Include="delete_x.h" />
+    <ClInclude Include="FabrykaOperacji.h" />
+    <ClInclude Include="IOperacja.h" />
     <ClInclude Include="lista.h" />
     <ClInclude Include="odwroc.h" />
     <ClInclude Include="push_back.h" />

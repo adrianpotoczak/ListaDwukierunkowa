@@ -1,9 +1,9 @@
 #pragma once
-#include "lista.h"
+#include "IOperacja.h"
 
-class pushback {
+class pushback : public IOperacja {
 public:
-    void wykonaj(lista& lista) {
+    void wykonaj(lista& lista) override {
         int liczba;
         cout << "Podaj jaka liczbe wstawic na koniec listy: ";
         cin >> liczba;

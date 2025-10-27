@@ -1,9 +1,9 @@
 #pragma once
-#include "lista.h"
+#include "IOperacja.h"
 
-class deletex {
+class deletex : public IOperacja {
 public:
-    void wykonaj(lista& lista) {
+    void wykonaj(lista& lista) override {
         int indeks;
         cout << "Podaj indeks elementu do usuniecia: ";
         cin >> indeks;

@@ -1,10 +1,9 @@
 #pragma once
-#include "lista.h"
-#include <iostream>
+#include "IOperacja.h"
 
-class odwroc {
+class odwroc : public IOperacja {
 public:
-    void wykonaj(lista& lista) {
+    void wykonaj(lista& lista) override {
         lista.odwroc();
     }
 };

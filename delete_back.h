@@ -1,9 +1,9 @@
 #pragma once
-#include "lista.h"
+#include "IOperacja.h"
 
-class deleteback {
+class deleteback : public IOperacja {
 public:
-    void wykonaj(lista& lista) {
+    void wykonaj(lista& lista) override {
         if (!lista.delete_back()) {
             cout << "Lista jest juz pusta." << endl;
         }

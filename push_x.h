@@ -1,9 +1,9 @@
 #pragma once
-#include "lista.h"
+#include "IOperacja.h"
 
-class pushx {
+class pushx : public IOperacja {
 public:
-    void wykonaj(lista& lista) {
+    void wykonaj(lista& lista) override {
         int liczba;
         int indeks;
 

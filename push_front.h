@@ -1,10 +1,9 @@
 #pragma once
-#include "lista.h"
+#include "IOperacja.h"
 
-
-class pushfront {
+class pushfront : public IOperacja {
 public:
-    void wykonaj(lista& lista) {
+    void wykonaj(lista& lista) override {
         int liczba;
         cout << "Podaj liczbe na poczatek listy: ";
         cin >> liczba;
