@@ -16,4 +16,6 @@ public:
     void wyswietl();
     bool push_x(int indeks, int wartosc);
     bool delete_front();
+    bool delete_back();
+    bool delete_x(int indeks);
 };

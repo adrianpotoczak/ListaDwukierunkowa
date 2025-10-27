@@ -97,3 +97,51 @@ bool lista::delete_front() {
     rozmiar--;
     return true;
 }
+bool lista::delete_back() {
+    if (ogon == nullptr) {
+        return false;
+    }
+
+    wezel* do_usuniecia = ogon;
+
+    if (glowa == ogon) {
+        glowa = nullptr;
+        ogon = nullptr;
+    }
+    else {
+        ogon = ogon->poprzedni;
+        ogon->nastepny = nullptr;
+    }
+
+    delete do_usuniecia;
+    rozmiar--;
+    return true;
+}
+
+bool lista::delete_x(int indeks) {
+    if (indeks < 0 || indeks >= rozmiar) {
+        return false;
+    }
+
+    if (indeks == 0) {
+        return delete_front();
+    }
+    if (indeks == rozmiar - 1) {
+        return delete_back();
+    }
+
+    wezel* obecny = glowa;
+    for (int i = 0; i < indeks; ++i) {
+        obecny = obecny->nastepny;
+    }
+
+    wezel* poprzedni = obecny->poprzedni;
+    wezel* nastepny = obecny->nastepny;
+
+    poprzedni->nastepny = nastepny;
+    nastepny->poprzedni = poprzedni;
+
+    delete obecny;
+    rozmiar--;
+    return true;
+}
