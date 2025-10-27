@@ -145,3 +145,20 @@ bool lista::delete_x(int indeks) {
     rozmiar--;
     return true;
 }
+void lista::odwroc() {
+    wezel* temp = ogon;
+    while (temp) {
+        cout << temp->dane << " ";
+        temp = temp->poprzedni;
+    }
+}
+
+void lista::clear() {
+    while (glowa != nullptr) {
+        wezel* do_usuniecia = glowa;
+        glowa = glowa->nastepny;
+        delete do_usuniecia;
+    }
+    ogon = nullptr;
+    rozmiar = 0;
+}

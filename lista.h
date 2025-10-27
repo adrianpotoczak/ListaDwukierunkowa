@@ -18,4 +18,6 @@ public:
     bool delete_front();
     bool delete_back();
     bool delete_x(int indeks);
+    void odwroc();
+    void clear();
 };
