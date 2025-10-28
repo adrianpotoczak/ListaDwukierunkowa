@@ -1,0 +1,25 @@
+\doxysection{push\+\_\+x.\+h}
+\hypertarget{push__x_8h_source}{}\label{push__x_8h_source}\mbox{\hyperlink{push__x_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_i_operacja_8h}{IOperacja.h}}"{}}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classpushx}{pushx}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_i_operacja}{IOperacja}}\ \{}
+\DoxyCodeLine{00010\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keywordtype}{void}\ wykonaj(\mbox{\hyperlink{classlista}{lista}}\&\ \mbox{\hyperlink{classlista}{lista}})\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ liczba;}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ indeks;}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Podaj\ liczbe,\ ktora\ chcesz\ wstawic:\ "{}};}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ cin\ >>\ liczba;}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Podaj\ indeks,\ pod\ ktory\ chcesz\ wstawic\ element:\ "{}};}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ cin\ >>\ indeks;}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{classlista}{lista}}.push\_x(indeks,\ liczba))\ \{}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Indeks\ poza\ zakresem."{}}\ <<\ endl;}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00022\ \ \ \ \ \}}
+\DoxyCodeLine{00023\ \};}
+
+\end{DoxyCode}

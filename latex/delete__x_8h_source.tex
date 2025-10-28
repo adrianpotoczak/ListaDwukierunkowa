@@ -1,0 +1,22 @@
+\doxysection{delete\+\_\+x.\+h}
+\hypertarget{delete__x_8h_source}{}\label{delete__x_8h_source}\mbox{\hyperlink{delete__x_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_i_operacja_8h}{IOperacja.h}}"{}}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classdeletex}{deletex}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_i_operacja}{IOperacja}}\ \{}
+\DoxyCodeLine{00010\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keywordtype}{void}\ wykonaj(\mbox{\hyperlink{classlista}{lista}}\&\ \mbox{\hyperlink{classlista}{lista}})\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ indeks;}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Podaj\ indeks\ elementu\ do\ usuniecia:\ "{}};}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ cin\ >>\ indeks;}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{classlista}{lista}}.delete\_x(indeks))\ \{}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Nie\ udalo\ sie\ usunac\ elementu.\ Indeks\ poza\ zakresem."{}}\ <<\ endl;}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00019\ \ \ \ \ \}}
+\DoxyCodeLine{00020\ \};}
+
+\end{DoxyCode}

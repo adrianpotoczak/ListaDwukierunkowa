@@ -1,3 +1,8 @@
+/**
+ * @file push_x.h
+ * @brief Definicja klasy operacji 'pushx' (dodanie na indeks).
+ */
+
 #pragma once
 #include "IOperacja.h"
 

@@ -1,3 +1,8 @@
+/**
+ * @file odwroc.h
+ * @brief Definicja klasy operacji 'odwroc' (wyswietlenie od tylu).
+ */
+
 #pragma once
 #include "IOperacja.h"
 

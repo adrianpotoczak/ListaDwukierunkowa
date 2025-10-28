@@ -1,3 +1,8 @@
+/**
+ * @file push_front.h
+ * @brief Definicja klasy operacji 'pushfront' (dodanie na poczatek).
+ */
+
 #pragma once
 #include "IOperacja.h"
 

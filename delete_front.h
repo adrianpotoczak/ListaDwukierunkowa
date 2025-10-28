@@ -1,3 +1,8 @@
+/**
+ * @file delete_front.h
+ * @brief Definicja klasy operacji 'deletefront' (usuniecie z poczatku).
+ */
+
 #pragma once
 #include "IOperacja.h"
 

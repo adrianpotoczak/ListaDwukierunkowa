@@ -1,3 +1,8 @@
+/**
+ * @file delete_back.h
+ * @brief Definicja klasy operacji 'deleteback' (usuniecie z konca).
+ */
+
 #pragma once
 #include "IOperacja.h"
 

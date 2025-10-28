@@ -1,3 +1,8 @@
+/**
+ * @file FabrykaOperacji.h
+ * @brief Definicja klasy 'FabrykaOperacji', ktora tworzy obiekty operacji.
+ */
+
 #pragma once
 
 #include <string>

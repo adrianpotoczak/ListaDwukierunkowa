@@ -1,3 +1,8 @@
+/**
+ * @file wezel.h
+ * @brief Definicja klasy 'wezel', pojedynczego elementu listy.
+ */
+
 #pragma once
 using namespace std;
 

@@ -1,3 +1,8 @@
+/**
+ * @file delete_x.h
+ * @brief Definicja klasy operacji 'deletex' (usuniecie z indeksu).
+ */
+
 #pragma once
 #include "IOperacja.h"
 

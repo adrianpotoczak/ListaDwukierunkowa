@@ -1,3 +1,8 @@
+/**
+ * @file IOperacja.h
+ * @brief Definicja interfejsu (klasy abstrakcyjnej) 'IOperacja'.
+ */
+
 #pragma once
 #include "lista.h"
 #include <iostream>

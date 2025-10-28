@@ -1,3 +1,8 @@
+/**
+ * @file main.cpp
+ * @brief Glowny plik programu, zawiera funkcje main().
+ */
+
 #include <iostream>
 #include <string>
 #include "lista.h"

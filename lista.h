@@ -1,3 +1,8 @@
+/**
+ * @file lista.h
+ * @brief Definicja (deklaracja) klasy 'lista'.
+ */
+
 #pragma once
 #include "wezel.h"
 

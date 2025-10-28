@@ -1,3 +1,8 @@
+/**
+ * @file clear.h
+ * @brief Definicja klasy operacji 'clear' (wyczyszczenie listy).
+ */
+
 #pragma once
 #include "IOperacja.h"
 

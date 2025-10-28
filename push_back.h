@@ -1,3 +1,8 @@
+/**
+ * @file push_back.h
+ * @brief Definicja klasy operacji 'pushback' (dodanie na koniec).
+ */
+
 #pragma once
 #include "IOperacja.h"
 

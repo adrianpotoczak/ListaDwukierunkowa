@@ -1,3 +1,8 @@
+/**
+ * @file lista_dwukierunkowa.cpp
+ * @brief Implementacja metod klasy 'lista'.
+ */
+
 #include "lista.h"
 #include <iostream>
 
@@ -84,7 +89,7 @@ bool lista::delete_front() {
 
     wezel* do_usuniecia = glowa;
 
-    if (glowa == ogon) { 
+    if (glowa == ogon) {
         glowa = nullptr;
         ogon = nullptr;
     }
